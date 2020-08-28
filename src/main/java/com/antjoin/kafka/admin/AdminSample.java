@@ -10,12 +10,12 @@ public class AdminSample {
 
     public static void main(String[]args){
         AdminClient adminClient = adminclient();
+
     }
 
     public static AdminClient adminclient() {
         Properties props = new Properties();
         props.setProperty(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
-        AdminClient adminClient = AdminClient.create(props);
-        return adminClient;
+        return AdminClient.create(props);
     }
 }
